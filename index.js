@@ -1,14 +1,20 @@
 const express = require("express");
 const app = express();
 
+app.set("view engine", "ejs");
+
 app.listen(3000, () => {
   console.log("Application running on PORT 3000");
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/views/home.html");
+  res.render("home");
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile(__dirname + "/views/about.html");
+  res.render("about");
+});
+
+app.get("/journals", (req, res) => {
+  res.render("journals");
 });
