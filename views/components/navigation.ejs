@@ -1,24 +1,50 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #E21833;">
-    <div class="pull-left">
-        <a href="#">
-            <img src="/images/umd-logo.jpg" class="image-responsive">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #CF102D;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="/">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/1200px-Maryland_Terrapins_logo.svg.png"
+            height="40"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+          <small>URJ.org</small>
         </a>
-    </div>
-
-    <a class="navbar-brand" href="#">MURJ</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="/about">About</a>
-        <a class="nav-item nav-link" href="/journals">Journals A-Z</a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/journals">Journals</a>
+          </li>
+        </ul>
+        <!-- Left links -->
       </div>
+      <!-- Collapsible wrapper -->
+  
+    <!-- If you want right side icons, i.e. User profile, dropdown features, cart, etc. check MDB documentation -->
     </div>
-    <!-- Search Bar -->
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-</nav>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->

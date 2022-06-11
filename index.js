@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 
+// Set EJS View Engine
 app.set("view engine", "ejs");
 
 app.listen(3000, () => {
