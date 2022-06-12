@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const path = require("path");
+const volumes = require("./volumes");
 
 // Set EJS View Engine
 app.set("view engine", "ejs");
@@ -18,5 +18,10 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/journals", (req, res) => {
+  console.log(volumes);
   res.render("journals");
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact");
 });
