@@ -18,8 +18,8 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/journals", (req, res) => {
-  console.log(volumes);
-  res.render("journals");
+  // console.log(volumes);
+  res.render("journals", { data: volumes });
 });
 
 app.get("/contact", (req, res) => {

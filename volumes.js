@@ -1,3 +1,12 @@
+/*
+Array of all volumes within MURJ. Each time a new volume is added to MURJ, add the pdf file 
+to the volumes folder within the application. Then, insert an object into the volumes array
+so it can be rendered dynamically through the website. 
+
+Currently a crude implementation. Can be improved by having a function/form that will add to 
+the volumes array.
+*/
+
 let volumes = [
   {
     id: 1,
