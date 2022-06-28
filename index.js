@@ -5,7 +5,7 @@ const volumes = require("./volumes");
 // Set EJS View Engine
 app.set("view engine", "ejs");
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Application running on PORT 3000");
 });
 
