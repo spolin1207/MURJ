@@ -25,3 +25,11 @@ app.get("/archive", (req, res) => {
 app.get("/contact", (req, res) => {
   res.render("contact");
 });
+
+app.get("/submission", (req, res) => {
+  res.render("submission");
+});
+
+app.get("/submission/review", (req, res) => {
+  res.render("reviewProcess");
+});
