@@ -13,60 +13,63 @@
 
     <title>Journals</title>
 </head>
+
+<style>
+    .pageData {
+        padding: 20px;
+        background-color: #faf0f0;
+        margin-top: 20px;
+
+    }
+    .row {
+        margin: 10px 0px 10px 0px;
+    }
+    .archiveEntry {
+        height: 300px;
+        width: 240px;
+        margin: 10px 0px 10px 0px;
+    }
+
+</style>
+
 <body>
     <!-- Navbar -->
     <%- include('components/navigation'); %>
+        
+    <div class="container pageData">
+        <h1>Volumes</h1>
+        <div class="row">
+          <div class="col-md">
+            <img class="archiveEntry" src="https://i.ibb.co/dWS1smN/SCIENTIFIC-TERRAPIN-VOL1-ISS1.jpg">
+            </div>
+          <div class="col-md">
+            <img class="archiveEntry" src="https://i.ibb.co/k5rZ87k/SCIENTIFIC-TERRAPIN-VOL2-ISS1.jpg">
+          </div>
+          <div class="col-md">
+            <img class="archiveEntry" src="https://i.ibb.co/TBxSTsV/SCIENTIFIC-TERRAPIN-VOL2-ISS2.jpg">
+          </div>
+        </div>
 
-    <h6 class="bg-light p-2 border-top border-bottom">Volumes</h6>
-    <ul class="list-group list-group-light mb-4" style="margin-left: 15px;">
-        <!-- Insert each of the volumes dynamically into the website -->
-        <% for (var i = 0; i < data.length; i++) { %>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                        class="rounded-circle" />
-                    <div class="ms-3">
-                        <p class="fw-bold mb-1"><%= data[i].title %></p>
-                        <p class="text-muted mb-0"><%= data[i].filepath %></p>
-                    </div>
-                </div>
-            </li>
-        <% } %>
-    </ul>
+        <div class="row">
+            <div class="col-md">
+              <img class="archiveEntry" src="https://i.ibb.co/YBWL3ns/SCIENTIFIC-TERRAPIN-VOL3-ISS1.jpg">
+              </div>
+            <div class="col-md">
+              <img class="archiveEntry" src="https://i.ibb.co/hLSs88t/SCIENTIFIC-TERRAPIN-VOL3-ISS2.jpg">
+            </div>
+            <div class="col-md">
+                <!-- <img class="archiveEntry" src="https://i.ibb.co/hLSs88t/SCIENTIFIC-TERRAPIN-VOL3-ISS2.jpg"> -->
+              </div>
+          </div>
+      </div>
 
-    <h6 class="bg-light p-2 border-top border-bottom">Articles</h6>
-    <ul class="list-group list-group-light" style="margin-left: 15px;">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/9.jpg" alt="" style="width: 45px; height: 45px"
-                    class="rounded-circle" />
-                <div class="ms-3">
-                    <p class="fw-bold mb-1">Soraya Letto</p>
-                    <p class="text-muted mb-0">soraya.letto@gmail.com</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/11.jpg" class="rounded-circle" alt=""
-                    style="width: 45px; height: 45px" />
-                <div class="ms-3">
-                    <p class="fw-bold mb-1">Zeynep Dudley</p>
-                    <p class="text-muted mb-0">zeynep.dudley@gmail.com</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/15.jpg" class="rounded-circle" alt=""
-                    style="width: 45px; height: 45px" />
-                <div class="ms-3">
-                    <p class="fw-bold mb-1">Ayat Black</p>
-                    <p class="text-muted mb-0">ayat.black@gmail.com</p>
-                </div>
-            </div>
-        </li>
-    </ul>
+      <div class="container pageData">
+        <h1>Journals</h1>
+        None so far
+      </div>
+
+      
+        
 
     <%- include('components/footer'); %>
 </body>
