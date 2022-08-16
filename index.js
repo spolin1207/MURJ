@@ -9,27 +9,36 @@ app.listen(process.env.PORT || 3000, () => {
   console.log("Application running on PORT 3000");
 });
 
+// Home Page
 app.get("/", (req, res) => {
   res.render("home");
 });
 
+// About Page
 app.get("/about", (req, res) => {
-  res.render("about");
+  res.render("aboutMURJ");
 });
 
+app.get("/about/us", (req, res) => {
+  res.render("aboutUs");
+});
+
+// Archive Page
 app.get("/archive", (req, res) => {
   // console.log(volumes);
   res.render("archive", { data: volumes });
 });
 
-app.get("/contact", (req, res) => {
-  res.render("contact");
+app.get("/archive/database", (req, res) => {
+  // console.log(volumes);
+  res.render("archiveDatabase", { data: volumes });
 });
 
+// Submissions Page
 app.get("/submission", (req, res) => {
-  res.render("submission");
+  res.render("submissionInfo");
 });
 
-app.get("/submission/review", (req, res) => {
-  res.render("reviewProcess");
+app.get("/submission/submit", (req, res) => {
+  res.render("submissionReviewProcess");
 });

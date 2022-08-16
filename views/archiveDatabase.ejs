@@ -11,29 +11,43 @@
     <!-- MDB (If scripts don't work, add to the bottom of the page instead to see if it fixes the issue) -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
 
-    <title>Contact</title>
+    <title>Database</title>
 </head>
 
 <style>
-    .contact {
-        text-align: center;
-        padding: 20px;
+    /* Sidebar */
+  .container {
+    max-width: 100% !important;
+  }
+    .archiveEntry {
+        height: 300px;
+        width: 240px;
+        margin: 10px 0px 10px 0px;
+        border: 2px solid #919191;
     }
+
 </style>
 
 <body>
     <!-- Navbar -->
     <%- include('components/navigation'); %>
-    <h2 class="content" style="margin-left: 20px; margin-right: 20px; margin-top: 20px;">
-        Contact Us
-    </h2>
-    <p class="contact">
-        MURJ staff can be reached by email.
-        <br>
-        <br>
-        <a href="mailto:umd.murj@gmail.com" target="_blank">umd.murj@gmail.com</a>
-    </p>
-
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <%- include('components/archiveNavbar'); %>
+            </div>
+            <div class="col-md-9">
+                <main style="margin-top: 58px;">
+                    <h3>Database</h3>
+                    <p>
+                        Database functionality still in progress.
+                    </p>
+            </div>
+            </main>
+        </div>
+    </div>
+        
     <%- include('components/footer'); %>
 </body>
 </html>
