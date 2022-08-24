@@ -1,62 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
 
-    <!-- MDB (If scripts don't work, add to the bottom of the page instead to see if it fixes the issue) -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+  <!-- MDB (If scripts don't work, add to the bottom of the page instead to see if it fixes the issue) -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
 
-    <title>Home</title>
+  <title>Home</title>
 </head>
+
+<!-- Intro settings -->
+<style>
+  /* Default height for small devices */
+  #intro-example {
+    height: 400px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+  }
+
+  .card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+</style>
+
 <body>
-    <header>
-        <!-- Intro settings -->
-        <style>
-            /* Default height for small devices */
-            #intro-example {
-                height: 400px;
-            }
-            /* Height for devices larger than 992px */
-            @media (min-width: 992px) {
-                #intro-example {
-                    height: 600px;
-                }
-            }
-        </style>
-        <%- include('components/navigation'); %> 
-        <!-- Background image -->
-        <div id="intro-example" class="p-5 text-center bg-image" style="background-image: url('https://www.sunimprint.com/images/Maryland%20Terrapins%201997-Pres%20Alternate%20Logo%20diy%20iron%20on%20transfer%202.png');">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="text-white">
-                        <h1 class="mb-3">Welcome to MURJ</h1>
-                        <h5 class="mb-4">Fully Operational Website Coming Soon</h5>
+    <%- include('components/navigation'); %>
+  <header>
+    <!-- Background image -->
+    <div id="intro-example" class="p-5 text-center bg-image" style="background-image: url('https://i.pinimg.com/originals/43/02/aa/4302aaff1616373d1344c8abef2a7d99.jpg');">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Maryland Undergraduate Research Journal</h1>
+            <!-- <h5 class="mb-4">Fully Operational Website Coming Soon</h5> -->
 
-                        <a class="btn btn-outline-light btn-lg m-2"
-                        href="/submission"
-                        role="button"
-                        rel="nofollow">Submit</a>
+            <a class="btn btn-outline-light btn-lg m-2" href="/about" role="button" rel="nofollow">About</a>
 
-                        <a class="btn btn-outline-light btn-lg m-2"
-                        href="/about"
-                        role="button"
-                        rel="nofollow">About</a>
+            <a class="btn btn-outline-light btn-lg m-2" href="/archive" role="button">Archive</a>
 
-                        <a class="btn btn-outline-light btn-lg m-2"
-                        href="/archive"
-                        role="button">Archive</a>
-                    </div>
-                </div>
-            </div>
+            <a class="btn btn-outline-light btn-lg m-2" href="/submission" role="button" rel="nofollow">Submit</a>
+          </div>
         </div>
-        <!-- Background image -->
-    </header>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
 
-    <%- include('components/footer'); %>
+  <!-- Newsletter Cards -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Newsletter #1</h5>
+            <p class="card-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+            <a href="#!" class="btn btn-outline-dark">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Newsletter #2</h5>
+            <p class="card-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+            <a href="#!" class="btn btn-outline-dark">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Newsletter #3</h5>
+            <p class="card-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+            <a href="#!" class="btn btn-outline-dark">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('components/footer'); %>
 </body>
+
 </html>

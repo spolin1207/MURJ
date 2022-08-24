@@ -20,7 +20,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/about/us", (req, res) => {
-  res.render("aboutUs");
+  res.render("aboutMURJTeam");
 });
 
 // Archive Page
