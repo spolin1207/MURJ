@@ -42,3 +42,12 @@ app.get("/submission", (req, res) => {
 app.get("/submission/submit", (req, res) => {
   res.render("submissionReviewProcess");
 });
+
+// Newsletters
+app.get("/newsletterA", (req, res) => {
+  res.render("newsletterA");
+});
+
+app.get("/newsletterB", (req, res) => {
+  res.render("newsletterB");
+});
