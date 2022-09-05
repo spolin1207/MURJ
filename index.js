@@ -39,8 +39,12 @@ app.get("/submission", (req, res) => {
   res.render("submissionInfo");
 });
 
-app.get("/submission/submit", (req, res) => {
+app.get("/submission/review", (req, res) => {
   res.render("submissionReviewProcess");
+});
+
+app.get("/submission/submit", (req, res) => {
+  res.render("submissionForm");
 });
 
 // Newsletters
