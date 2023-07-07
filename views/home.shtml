@@ -36,7 +36,7 @@
 </style>
 
 <body>
-    #include virtual="components/navigation.shtml"
+    <!--#include virtual="components/navigation.shtml"-->
   <header>
     <!-- Background image -->
     <div id="intro-example" class="p-5 text-center bg-image" style="background-image: url('https://image.jimcdn.com/app/cms/image/transf/none/path/s38786de65b082215/backgroundarea/iae9924e97149e358/version/1628095684/image.jpg'); height: 60vh;">
@@ -129,7 +129,7 @@
     </div>
   </div>
 
-  #include virtual="components/footer.shtml";
+  <!--#include virtual="components/footer.shtml"-->
 </body>
 
 </html>

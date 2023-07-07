@@ -31,7 +31,7 @@
 
 <body>
   <!-- Navbar -->
-  #include virtual="components/navigation.shtml"
+  <!--#include virtual="components/navigation.shtml"-->
 
   <div class="container">
     <div class="row">
@@ -86,7 +86,7 @@
   <br />
   <br />
 
-  #include virtual="components/footer.shtml";
+  <!--#include virtual="components/footer.shtml"-->
 </body>
 
 </html>

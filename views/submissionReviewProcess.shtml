@@ -24,11 +24,11 @@
 
 <body>
   <!-- Navbar -->
-  #include virtual="components/navigation.shtml"
+  <!--#include virtual="components/navigation.shtml"-->
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        #include virtual="components/submissionNavbar.shtml";
+        <!--#include virtual="components/submissionNavbar.shtml"-->
       </div>
       <div class="col-md-9">
         <main style="margin-top: 58px;">
@@ -71,7 +71,7 @@
   <br />
   <br />
 
-  #include virtual="components/footer.shtml";
+  <!--#include virtual="components/footer.shtml"-->
 </body>
 
 </html>
