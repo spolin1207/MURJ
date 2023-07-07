@@ -25,7 +25,7 @@
 
 <body>
   <!-- Navbar -->
-  <%- include('components/navigation'); %>
+  #include virtual="components/navigation.shtml"
   <div class="container" style="padding: 3%;">
     <h4>Introducing the Maryland Undergraduate Research Journal!</h4>
     <h6 style="font-style: italic;">08/29/2022</h6>
@@ -62,7 +62,7 @@
   <br />
   <br />
 
-  <%- include('components/footer'); %>
+  #include virtual="components/footer.shtml";
 </body>
 
 </html>

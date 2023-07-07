@@ -31,12 +31,12 @@
 
 <body>
   <!-- Navbar -->
-  <%- include('components/navigation'); %>
+  #include virtual="components/navigation.shtml"
 
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <%- include('components/archiveNavbar'); %>
+        #include virtual="components/archiveNavbar.shtml";
       </div>
       <div class="col-md-9">
         <main style="margin-top: 58px;">
@@ -86,7 +86,7 @@
   <br />
   <br />
 
-  <%- include('components/footer'); %>
+  #include virtual="components/footer.shtml";
 </body>
 
 </html>
