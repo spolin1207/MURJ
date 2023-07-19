@@ -23,11 +23,71 @@
 
 <body>
   <!-- Navbar -->
-  <!--#include virtual="components/navigation.shtml" -->
+  <style>
+    * {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  </style>
+  
+  <!-- #CA3433 -->
+  <!-- #D04746 -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #CA3433">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="home.shtml">
+          <!-- https://i.ibb.co/PYXX1bc/murj-transparent-white.png -->
+          <!-- https://i.ibb.co/drkwhCx/murj-transparent.png -->
+          <img src="https://i.ibb.co/PYXX1bc/murj-transparent-white.png" height="45" alt="MDB Logo" loading="lazy" />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="home.shtml">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutMURJ.shtml">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="archive.shtml">Archive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="submissionInfo.shtml">Submit</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- If you want right side icons, i.e. User profile, dropdown features, cart, etc. check MDB documentation -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <!--#include virtual="components/submissionNavbar.shtml" -->
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+            <div class="position-sticky">
+              <div class="list-group list-group-flush mx-3 mt-4">
+                <a href="submissionInfo.shtml" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                  <span>Submission Guidelines</span>
+                </a>
+                <a href="submissionReviewProcess.shtml" class="list-group-item list-group-item-action py-2 ripple">
+                  <span>Review Process</span>
+                </a>
+                <a href="submissionForm.shtml" class="list-group-item list-group-item-action py-2 ripple">
+                  <span>Submit</span>
+                </a>
+              </div>
+            </div>
+          </nav>
       </div>
       <div class="col-md-9">
         <main style="margin-top: 58px;">
@@ -118,7 +178,74 @@
       </main>
     </div>
   </div>
-<!--#include virtual="components/footer.shtml" -->
+<!-- Footer -->
+<footer class="text-center text-lg-start text-black" style="background-color:white;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <hr class="my-1">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Maryland Undergraduate Research Journal
+            </h6>
+  
+  
+            <div class="p-3" style="margin-left: -20px;">
+              <!-- © 2022 Copyright: -->
+              <a class="text-black" href="/">murj.umd.edu</a>
+            </div>
+  
+  
+            <p>
+              <!-- Insert footer text -->
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <hr class="w-100 clearfix d-md-none" />
+  
+  
+  
+          <hr class="w-100 clearfix d-md-none" />
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <p>
+  
+            </p>
+          </div>
+  
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <!-- <h6 class="text-uppercase mb-4 font-weight-bold" style="margin-left: 80%;">Contact</h6> -->
+            <p><i class="fas fa-home mr-3"></i> University of Maryland, College Park</p>
+            <p><i class="fas fa-envelope mr-3"></i> umd.murj@gmail.com</p>
+            <!-- <p><i class="fas fa-phone mr-3"></i> (443) 443-4434</p>
+                <p><i class="fab fa-instagram mr-3"></i> @umdmurj</p> -->
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <!-- <h6 class="text-uppercase mb-4 font-weight-bold"></h6> -->
+            <p><i class="fab fa-linkedin mr-3"></i> umdmurj</p>
+            <p><i class="fab fa-twitter mr-3"></i> @umdmurj</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+  
+  
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
 </body>
 
 </html>
