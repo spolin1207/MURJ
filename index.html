@@ -36,7 +36,53 @@
 </style>
 
 <body>
-    <!--#include virtual="components/navigation.shtml"-->
+  <style>
+    * {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  </style>
+  
+  <!-- #CA3433 -->
+  <!-- #D04746 -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #CA3433">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+          <!-- https://i.ibb.co/PYXX1bc/murj-transparent-white.png -->
+          <!-- https://i.ibb.co/drkwhCx/murj-transparent.png -->
+          <img src="https://i.ibb.co/PYXX1bc/murj-transparent-white.png" height="45" alt="MDB Logo" loading="lazy" />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutMURJ.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="archive.html">Archive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="submissionInfo.html">Submit</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- If you want right side icons, i.e. User profile, dropdown features, cart, etc. check MDB documentation -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
   <header>
     <!-- Background image -->
     <div id="intro-example" class="p-5 text-center bg-image" style="background-image: url('https://image.jimcdn.com/app/cms/image/transf/none/path/s38786de65b082215/backgroundarea/iae9924e97149e358/version/1628095684/image.jpg'); height: 60vh;">
@@ -46,11 +92,11 @@
             <h1 class="mb-3">Maryland Undergraduate Research Journal</h1>
             <!-- <h5 class="mb-4">Fully Operational Website Coming Soon</h5> -->
 
-            <a class="btn btn-outline-light btn-lg m-2" href="/about" role="button" rel="nofollow">About</a>
+            <a type="text/html" class="btn btn-outline-light btn-lg m-2" href="aboutMURJ.html" role="button" rel="nofollow">About</a>
 
-            <a class="btn btn-outline-light btn-lg m-2" href="/archive" role="button">Archive</a>
+            <a type="text/html" class="btn btn-outline-light btn-lg m-2" href="archive.html" role="button">Archive</a>
 
-            <a class="btn btn-outline-light btn-lg m-2" href="/submission" role="button" rel="nofollow">Submit</a>
+            <a type="text/html" class="btn btn-outline-light btn-lg m-2" href="submissionInfo.html" role="button" rel="nofollow">Submit</a>
           </div>
         </div>
       </div>
@@ -66,7 +112,7 @@
         <div class="card">
           <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
             <img src="https://i.ibb.co/ns8z8BK/murj-call-for-submission.png" class="img-fluid" />
-            <a href="/newsletterB">
+            <a href="newsletterB.html">
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
             </a>
           </div>
@@ -74,7 +120,7 @@
             <h5 class="card-title">CALL FOR SUBMSSIONS</h5>
             <h6 style="font-style: italic;">08/29/2022</h6>
             <p class="card-text">We are excited to announce that the Maryland Undergraduate Research Journal is now...</p>
-            <a href="/newsletterB" class="btn btn-outline-dark">View</a>
+            <a href="newsletterB.html" class="btn btn-outline-dark">View</a>
           </div>
         </div>
       </div>
@@ -82,7 +128,7 @@
         <div class="card">
           <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
             <img src="https://i.ibb.co/Rj1ZH6W/murj-red-white.png" class="img-fluid" />
-            <a href="/newsletterA">
+            <a href="newsletterA.html">
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
             </a>
           </div>
@@ -90,7 +136,7 @@
             <h5 class="card-title">INTRODUCTION</h5>
             <h6 style="font-style: italic;">08/29/2022</h6>
             <p class="card-text">We are proud to announce the establishment of the Maryland Undergraduate Research Journal!</p>
-            <a href="/newsletterA" class="btn btn-outline-dark">View</a>
+            <a href="newsletterA.html" class="btn btn-outline-dark">View</a>
           </div>
         </div>
       </div>
@@ -129,7 +175,74 @@
     </div>
   </div>
 
-  <!--#include virtual="components/footer.shtml"-->
+<!-- Footer -->
+<footer class="text-center text-lg-start text-black" style="background-color:white;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <hr class="my-1">
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">
+            Maryland Undergraduate Research Journal
+          </h6>
+
+
+          <div class="p-3" style="margin-left: -20px;">
+            <!-- © 2022 Copyright: -->
+            <a class="text-black" href="/">murj.umd.edu</a>
+          </div>
+
+
+          <p>
+            <!-- Insert footer text -->
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <p>
+
+          </p>
+        </div>
+
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <!-- <h6 class="text-uppercase mb-4 font-weight-bold" style="margin-left: 80%;">Contact</h6> -->
+          <p><i class="fas fa-home mr-3"></i> University of Maryland, College Park</p>
+          <p><i class="fas fa-envelope mr-3"></i> umd.murj@gmail.com</p>
+          <!-- <p><i class="fas fa-phone mr-3"></i> (443) 443-4434</p>
+              <p><i class="fab fa-instagram mr-3"></i> @umdmurj</p> -->
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <!-- <h6 class="text-uppercase mb-4 font-weight-bold"></h6> -->
+          <p><i class="fab fa-linkedin mr-3"></i> umdmurj</p>
+          <p><i class="fab fa-twitter mr-3"></i> @umdmurj</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+
+  </div>
+  <!-- Grid container -->
+</footer>
+<!-- Footer -->
 </body>
 
 </html>
